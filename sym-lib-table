@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name st_shifter)(type Legacy)(uri ${KIPRJMOD}/kicad-symbols-generated/ics/atari-16-32/st_shifter.lib)(options "")(descr ""))
+)
