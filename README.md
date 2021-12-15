@@ -1,25 +1,8 @@
-# HOW TO USE
+# An experimental extended palette for the Atari ST
 
-## Initialise your git repository
+By David SPORN
+Creative Commons CC0
 
-* clone this repository
-```
-git clone --recurse-submodules https://github.com/sporniket/seed-kicad.git
-cd kicad-symbols-generated
-make
-cd ..
-```
-* Change the remote `origin` to your repository
-```
-git remote set-url origin https://your.repository/full/path.git
-```
-* Or remove the remote `origin`
-```
-git remote rm origin
-```
+more information later...
 
-## Initialise a new Kicad project
-
-* Start Kicad
-* Create a new project located in your working copy of your git repository, or a new subfolder if you plan to manage several projects
-* Add the various libraries (symbols, footprints and 3d shapes) as project specific libraries.
+See `32768-colors.md` for the original description by Barry Orlando.
