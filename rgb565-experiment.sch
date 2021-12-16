@@ -5,8 +5,8 @@ $Descr A3 16535 11693
 encoding utf-8
 Sheet 1 1
 Title "Experimental RGB-565 mod for the Atari ST"
-Date "2021-12-15"
-Rev "v1.0.0-exp1"
+Date "2021-12-16"
+Rev "v1.0.0-exp2"
 Comp "Sporniket-Studio.com"
 Comment1 ""
 Comment2 ""
@@ -772,10 +772,10 @@ Text Label 4800 8900 1    50   ~ 0
 gnd
 Wire Wire Line
 	4800 8900 4800 8600
-Text Label 4800 6400 3    50   ~ 0
+Text Label 5100 6700 2    50   ~ 0
 vcc
 Wire Wire Line
-	4800 6700 4800 6400
+	4800 6700 5100 6700
 Wire Wire Line
 	2950 6900 2950 7100
 Wire Wire Line
@@ -1358,4 +1358,138 @@ Text Notes 5300 3950 0    50   ~ 0
 «Additionally, jumpers are installed across \neach of three 3.6K ohm resistors on the motherboard.  \nThese resistors are easily traced from the Shifter \nsocket pins 21, 24, and 27.» \n(From the original text)\n
 Text Notes 14350 850  0    50   ~ 0
 The values are taken from the mod\nwith a slight adjust of 3K76 to 3K74\nto be in the E96 series (those are\n1% resistors by the way)
+$Comp
+L Connector_Generic:Conn_01x02 J2
+U 1 1 61BD19F2
+P 1500 7500
+F 0 "J2" H 1500 7600 50  0000 C CNN
+F 1 "Conn_01x02" H 1500 7300 50  0000 C CNN
+F 2 "" H 1500 7500 50  0001 C CNN
+F 3 "~" H 1500 7500 50  0001 C CNN
+	1    1500 7500
+	1    0    0    -1  
+$EndComp
+Text Label 1000 7500 2    50   ~ 0
+vcc
+Text Label 1000 7600 2    50   ~ 0
+gnd
+Wire Wire Line
+	1000 7600 1100 7600
+Wire Wire Line
+	1000 7500 1100 7500
+$Comp
+L power:GND #PWR02
+U 1 1 61C17A12
+P 1100 7600
+F 0 "#PWR02" H 1100 7350 50  0001 C CNN
+F 1 "GND" H 1100 7450 50  0000 C CNN
+F 2 "" H 1100 7600 50  0001 C CNN
+F 3 "" H 1100 7600 50  0001 C CNN
+	1    1100 7600
+	1    0    0    -1  
+$EndComp
+Connection ~ 1100 7600
+Wire Wire Line
+	1100 7600 1300 7600
+$Comp
+L power:+5V #PWR01
+U 1 1 61C185E7
+P 1100 7500
+F 0 "#PWR01" H 1100 7350 50  0001 C CNN
+F 1 "+5V" H 1100 7640 50  0000 C CNN
+F 2 "" H 1100 7500 50  0001 C CNN
+F 3 "" H 1100 7500 50  0001 C CNN
+	1    1100 7500
+	1    0    0    -1  
+$EndComp
+Connection ~ 1100 7500
+Wire Wire Line
+	1100 7500 1300 7500
+Text Notes 600  8000 0    50   ~ 0
+If the power from the shifter socket\nis not enough...
+$Comp
+L Connector_Generic:Conn_01x18 J3
+U 1 1 61C19D2C
+P 13000 8600
+F 0 "J3" H 13000 9500 50  0000 C CNN
+F 1 "Conn_01x18" H 13000 7600 50  0000 C CNN
+F 2 "" H 13000 8600 50  0001 C CNN
+F 3 "~" H 13000 8600 50  0001 C CNN
+	1    13000 8600
+	-1   0    0    -1  
+$EndComp
+Text Label 13500 8300 2    50   ~ 0
+r0
+Text Label 13500 8200 2    50   ~ 0
+r1
+Text Label 13500 8100 2    50   ~ 0
+r2
+Text Label 13500 8000 2    50   ~ 0
+r3
+Text Label 13500 7900 2    50   ~ 0
+r4
+Text Label 13500 7800 2    50   ~ 0
+r5
+Text Label 13500 8900 2    50   ~ 0
+g0
+Text Label 13500 8800 2    50   ~ 0
+g1
+Text Label 13500 8700 2    50   ~ 0
+g2
+Text Label 13500 8600 2    50   ~ 0
+g3
+Text Label 13500 8500 2    50   ~ 0
+g4
+Text Label 13500 8400 2    50   ~ 0
+g5
+Text Label 13500 9500 2    50   ~ 0
+r0
+Text Label 13500 9400 2    50   ~ 0
+r1
+Text Label 13500 9300 2    50   ~ 0
+r2
+Text Label 13500 9200 2    50   ~ 0
+r3
+Text Label 13500 9100 2    50   ~ 0
+r4
+Text Label 13500 9000 2    50   ~ 0
+r5
+Wire Wire Line
+	13200 7800 13500 7800
+Wire Wire Line
+	13200 7900 13500 7900
+Wire Wire Line
+	13200 8000 13500 8000
+Wire Wire Line
+	13200 8100 13500 8100
+Wire Wire Line
+	13200 8200 13500 8200
+Wire Wire Line
+	13200 8300 13500 8300
+Wire Wire Line
+	13200 8400 13500 8400
+Wire Wire Line
+	13200 8500 13500 8500
+Wire Wire Line
+	13200 8600 13500 8600
+Wire Wire Line
+	13200 8700 13500 8700
+Wire Wire Line
+	13200 8800 13500 8800
+Wire Wire Line
+	13200 8900 13500 8900
+Wire Wire Line
+	13200 9000 13500 9000
+Wire Wire Line
+	13200 9100 13500 9100
+Wire Wire Line
+	13200 9200 13500 9200
+Wire Wire Line
+	13200 9300 13500 9300
+Wire Wire Line
+	13200 9400 13500 9400
+Wire Wire Line
+	13200 9500 13500 9500
+Text Notes 12650 7600 0    50   ~ 0
+Use this to plug to digital\nconverter.
 $EndSCHEMATC
