@@ -101,7 +101,7 @@ Additionally, jumpers are installed across each of three 3.6K ohm
 
 ## Circuit Schematic
 
-     I was going to get the circuit diagram for this project digitized, but
+I was going to get the circuit diagram for this project digitized, but
  just didn't get around to it (saved you the download). So if you want it send
  me a self addressed stamped envelope to the following address:
 
@@ -129,7 +129,7 @@ Additionally, jumpers are installed across each of three 3.6K ohm
 
 ## Software
 
-     Included with this text file is a program to display all gray levels and
+Included with this text file is a program to display all gray levels and
  colors. This is a very crude program but was intended to only prove that the
  circuit works.  I have also included the C source code which provides the
  engine for converting basic color intensities to board compatible bit
