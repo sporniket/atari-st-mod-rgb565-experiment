@@ -427,12 +427,12 @@ $EndComp
 $Comp
 L 74xx:74HC00 U1
 U 3 1 61BDF303
-P 3400 7000
-F 0 "U1" H 3400 7050 50  0000 C CNN
-F 1 "74HC00" H 3400 6950 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 3400 7000 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74hc00" H 3400 7000 50  0001 C CNN
-	3    3400 7000
+P 3150 7000
+F 0 "U1" H 3150 7050 50  0000 C CNN
+F 1 "74HC00" H 3150 6950 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 3150 7000 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74hc00" H 3150 7000 50  0001 C CNN
+	3    3150 7000
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -467,150 +467,136 @@ Wire Wire Line
 	9300 2050 9150 2050
 Wire Wire Line
 	10900 1800 11500 1800
-Text Label 2800 6900 0    50   ~ 0
+Text Label 2550 6900 0    50   ~ 0
 a5
 Wire Wire Line
-	3100 6900 2950 6900
+	2850 6900 2700 6900
 Text Notes 8600 1450 0    50   ~ 0
 ~CS2~ = ~CS~ OR R/~W~\nThe second shifter is prevented to drive the bus \nduring Read cycles
-Text Label 4000 7100 0    50   ~ 0
+Text Label 3750 7100 0    50   ~ 0
 a5
 Wire Wire Line
-	4300 7100 4150 7100
+	4050 7100 3900 7100
 $Comp
 L 74xx:74HC245 U4
 U 1 1 61C4AF5F
-P 6500 6500
-F 0 "U4" H 6200 7150 50  0000 C CNN
-F 1 "74HC245" H 6200 5850 50  0000 C CNN
-F 2 "Package_DIP:DIP-20_W7.62mm_Socket" H 6500 6500 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74HC245" H 6500 6500 50  0001 C CNN
-	1    6500 6500
+P 6250 6500
+F 0 "U4" H 5950 7150 50  0000 C CNN
+F 1 "74HC245" H 5950 5850 50  0000 C CNN
+F 2 "Package_DIP:DIP-20_W7.62mm_Socket" H 6250 6500 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74HC245" H 6250 6500 50  0001 C CNN
+	1    6250 6500
 	1    0    0    -1  
 $EndComp
 $Comp
 L 74xx:74HC245 U6
 U 1 1 61C4DE15
-P 6500 8200
-F 0 "U6" H 6200 8850 50  0000 C CNN
-F 1 "74HC245" H 6200 7550 50  0000 C CNN
-F 2 "Package_DIP:DIP-20_W7.62mm_Socket" H 6500 8200 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74HC245" H 6500 8200 50  0001 C CNN
-	1    6500 8200
+P 6250 8200
+F 0 "U6" H 5950 8850 50  0000 C CNN
+F 1 "74HC245" H 5950 7550 50  0000 C CNN
+F 2 "Package_DIP:DIP-20_W7.62mm_Socket" H 6250 8200 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74HC245" H 6250 8200 50  0001 C CNN
+	1    6250 8200
 	1    0    0    -1  
 $EndComp
-Text Label 5700 6000 0    50   ~ 0
+Text Label 5450 6000 0    50   ~ 0
 d14
-Text Label 5700 6100 0    50   ~ 0
+Text Label 5450 6100 0    50   ~ 0
 d11
-Text Label 5700 6200 0    50   ~ 0
+Text Label 5450 6200 0    50   ~ 0
 d15
-Text Label 5700 6300 0    50   ~ 0
+Text Label 5450 6300 0    50   ~ 0
 d13
-Text Label 5700 6400 0    50   ~ 0
+Text Label 5450 6400 0    50   ~ 0
 d7
-Text Label 5700 6500 0    50   ~ 0
+Text Label 5450 6500 0    50   ~ 0
 d12
-Text Label 5700 6600 0    50   ~ 0
+Text Label 5450 6600 0    50   ~ 0
 d3
-Text Label 5700 7700 0    50   ~ 0
+Text Label 5450 7700 0    50   ~ 0
 d9
-Text Label 5700 7800 0    50   ~ 0
+Text Label 5450 7800 0    50   ~ 0
 d8
-Text Label 5700 7900 0    50   ~ 0
+Text Label 5450 7900 0    50   ~ 0
 d6
-Text Label 5700 8000 0    50   ~ 0
+Text Label 5450 8000 0    50   ~ 0
 d5
-Text Label 5700 8100 0    50   ~ 0
+Text Label 5450 8100 0    50   ~ 0
 d4
-Text Label 5700 8200 0    50   ~ 0
+Text Label 5450 8200 0    50   ~ 0
 d1
-Text Label 5700 8300 0    50   ~ 0
+Text Label 5450 8300 0    50   ~ 0
 d0
-Text Label 7300 7700 2    50   ~ 0
+Text Label 7050 7700 2    50   ~ 0
 DAT9
-Text Label 7300 7800 2    50   ~ 0
+Text Label 7050 7800 2    50   ~ 0
 DAT8
-Text Label 7300 7900 2    50   ~ 0
+Text Label 7050 7900 2    50   ~ 0
 DAT6
-Text Label 7300 8000 2    50   ~ 0
+Text Label 7050 8000 2    50   ~ 0
 DAT5
-Text Label 7300 8100 2    50   ~ 0
+Text Label 7050 8100 2    50   ~ 0
 DAT4
-Text Label 7300 8200 2    50   ~ 0
+Text Label 7050 8200 2    50   ~ 0
 DAT1
-Text Label 7300 8300 2    50   ~ 0
+Text Label 7050 8300 2    50   ~ 0
 DAT0
 Wire Wire Line
-	5700 7700 6000 7700
+	5450 7700 5750 7700
 Wire Wire Line
-	5700 7800 6000 7800
+	5450 7800 5750 7800
 Wire Wire Line
-	5700 7900 6000 7900
+	5450 7900 5750 7900
 Wire Wire Line
-	5700 8000 6000 8000
+	5450 8000 5750 8000
 Wire Wire Line
-	5700 8100 6000 8100
+	5450 8100 5750 8100
 Wire Wire Line
-	5700 8200 6000 8200
+	5450 8200 5750 8200
 Wire Wire Line
-	7000 7700 7300 7700
+	6750 7700 7050 7700
 Wire Wire Line
-	7000 7800 7300 7800
+	6750 7800 7050 7800
 Wire Wire Line
-	7000 7900 7300 7900
+	6750 7900 7050 7900
 Wire Wire Line
-	7000 8000 7300 8000
+	6750 8000 7050 8000
 Wire Wire Line
-	7000 8100 7300 8100
+	6750 8100 7050 8100
 Wire Wire Line
-	7000 8200 7300 8200
+	6750 8200 7050 8200
 Wire Wire Line
-	5700 8300 6000 8300
+	5450 8300 5750 8300
 Wire Wire Line
-	7000 8300 7300 8300
-Text Label 7300 6000 2    50   ~ 0
+	6750 8300 7050 8300
+Text Label 7050 6000 2    50   ~ 0
 DAT9
-Text Label 7300 6100 2    50   ~ 0
+Text Label 7050 6100 2    50   ~ 0
 DAT8
-Text Label 7300 6200 2    50   ~ 0
+Text Label 7050 6200 2    50   ~ 0
 DAT6
-Text Label 7300 6300 2    50   ~ 0
+Text Label 7050 6300 2    50   ~ 0
 DAT5
-Text Label 7300 6400 2    50   ~ 0
+Text Label 7050 6400 2    50   ~ 0
 DAT4
-Text Label 7300 6500 2    50   ~ 0
+Text Label 7050 6500 2    50   ~ 0
 DAT1
-Text Label 7300 6600 2    50   ~ 0
+Text Label 7050 6600 2    50   ~ 0
 DAT0
 Wire Wire Line
-	7000 6000 7300 6000
+	5450 6000 5750 6000
 Wire Wire Line
-	7000 6100 7300 6100
+	5450 6100 5750 6100
 Wire Wire Line
-	7000 6200 7300 6200
+	5450 6200 5750 6200
 Wire Wire Line
-	7000 6300 7300 6300
+	5450 6300 5750 6300
 Wire Wire Line
-	7000 6400 7300 6400
+	5450 6400 5750 6400
 Wire Wire Line
-	7000 6500 7300 6500
+	5450 6500 5750 6500
 Wire Wire Line
-	7000 6600 7300 6600
-Wire Wire Line
-	5700 6000 6000 6000
-Wire Wire Line
-	5700 6100 6000 6100
-Wire Wire Line
-	5700 6200 6000 6200
-Wire Wire Line
-	5700 6300 6000 6300
-Wire Wire Line
-	5700 6400 6000 6400
-Wire Wire Line
-	5700 6500 6000 6500
-Wire Wire Line
-	5700 6600 6000 6600
+	5450 6600 5750 6600
 Text Label 11200 4900 2    50   ~ 0
 DAT9
 Text Label 11200 5000 2    50   ~ 0
@@ -675,32 +661,32 @@ Wire Wire Line
 	11500 5600 11200 5600
 Wire Wire Line
 	11200 5500 11500 5500
-Text Label 5700 6900 0    50   ~ 0
+Text Label 5450 6900 0    50   ~ 0
 vcc
 Wire Wire Line
-	6000 6900 5700 6900
-Text Label 5700 8600 0    50   ~ 0
+	5750 6900 5450 6900
+Text Label 5450 8600 0    50   ~ 0
 vcc
 Wire Wire Line
-	6000 8600 5700 8600
-Text Label 5700 6700 0    50   ~ 0
+	5750 8600 5450 8600
+Text Label 5450 6700 0    50   ~ 0
 gnd
 Wire Wire Line
-	5700 6700 6000 6700
-Text Label 5700 8400 0    50   ~ 0
+	5450 6700 5750 6700
+Text Label 5450 8400 0    50   ~ 0
 gnd
 Wire Wire Line
-	5700 8400 6000 8400
-NoConn ~ 7000 6700
-NoConn ~ 7000 8400
-Text Label 6200 7300 0    50   ~ 0
+	5450 8400 5750 8400
+NoConn ~ 6750 6700
+NoConn ~ 6750 8400
+Text Label 5950 7300 0    50   ~ 0
 gnd
 Wire Wire Line
-	6200 7300 6500 7300
-Text Label 6200 9000 0    50   ~ 0
+	5950 7300 6250 7300
+Text Label 5950 9000 0    50   ~ 0
 gnd
 Wire Wire Line
-	6200 9000 6500 9000
+	5950 9000 6250 9000
 Text Label 10700 10500 0    50   ~ 0
 gnd
 Wire Wire Line
@@ -721,15 +707,15 @@ Text Label 12250 850  3    50   ~ 0
 vcc
 Wire Wire Line
 	12250 1150 12250 850 
-Text Label 6800 5700 2    50   ~ 0
+Text Label 6550 5700 2    50   ~ 0
 vcc
 Wire Wire Line
-	6500 5700 6800 5700
-Text Label 6800 7400 2    50   ~ 0
+	6250 5700 6550 5700
+Text Label 6550 7400 2    50   ~ 0
 vcc
 Wire Wire Line
-	6500 7400 6800 7400
-Text Notes 2900 9750 0    50   ~ 0
+	6250 7400 6550 7400
+Text Notes 2650 9750 0    50   ~ 0
 The original mod state to use one 74x243 + one 74x245.\nI don't know how it is done\n\nI used two 74x245, and use a5 to select wich one to \nenable. I assume that address 0 to 15 are the palette\nregisters. It may be wrong.\n\nThe 74x257 allow to test whether the palette registers\nare in the range 0—15 or 16—31
 Wire Wire Line
 	10300 1900 10100 1900
@@ -760,102 +746,102 @@ Wire Wire Line
 $Comp
 L 74xx:74LS257 U5
 U 1 1 61BA20B8
-P 4800 7600
-F 0 "U5" H 4500 8350 50  0000 C CNN
-F 1 "74LS257" H 4500 6750 50  0000 C CNN
-F 2 "Package_DIP:DIP-16_W7.62mm_Socket" H 4800 7600 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS257" H 4800 7600 50  0001 C CNN
-	1    4800 7600
+P 4550 7600
+F 0 "U5" H 4250 8350 50  0000 C CNN
+F 1 "74LS257" H 4250 6750 50  0000 C CNN
+F 2 "Package_DIP:DIP-16_W7.62mm_Socket" H 4550 7600 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS257" H 4550 7600 50  0001 C CNN
+	1    4550 7600
 	1    0    0    -1  
 $EndComp
-Text Label 4800 8900 1    50   ~ 0
+Text Label 4550 8900 1    50   ~ 0
 gnd
 Wire Wire Line
-	4800 8900 4800 8600
-Text Label 5100 6700 2    50   ~ 0
+	4550 8900 4550 8600
+Text Label 4850 6700 2    50   ~ 0
 vcc
 Wire Wire Line
-	4800 6700 5100 6700
+	4550 6700 4850 6700
 Wire Wire Line
-	2950 6900 2950 7100
+	2700 6900 2700 7100
 Wire Wire Line
-	2950 7100 3100 7100
-Connection ~ 2950 6900
+	2700 7100 2850 7100
+Connection ~ 2700 6900
 Wire Wire Line
-	2950 6900 2800 6900
+	2700 6900 2550 6900
 Wire Wire Line
-	4150 7100 4150 7300
+	3900 7100 3900 7300
 Wire Wire Line
-	4150 7300 4300 7300
-Connection ~ 4150 7100
+	3900 7300 4050 7300
+Connection ~ 3900 7100
 Wire Wire Line
-	4150 7100 4000 7100
+	3900 7100 3750 7100
 Wire Wire Line
-	4300 7000 3850 7000
+	4050 7000 3600 7000
 Wire Wire Line
-	3850 7000 3850 7400
+	3600 7000 3600 7400
 Wire Wire Line
-	3850 7400 4300 7400
-Connection ~ 3850 7000
+	3600 7400 4050 7400
+Connection ~ 3600 7000
 Wire Wire Line
-	3850 7000 3700 7000
-Text Label 4000 8000 0    50   ~ 0
+	3600 7000 3450 7000
+Text Label 3750 8000 0    50   ~ 0
 gnd
 Wire Wire Line
-	4000 8000 4200 8000
+	3750 8000 3950 8000
 Wire Wire Line
-	4200 8000 4200 7900
+	3950 8000 3950 7900
 Wire Wire Line
-	4200 7600 4300 7600
-Connection ~ 4200 8000
+	3950 7600 4050 7600
+Connection ~ 3950 8000
 Wire Wire Line
-	4200 8000 4300 8000
+	3950 8000 4050 8000
 Wire Wire Line
-	4300 7700 4200 7700
-Connection ~ 4200 7700
+	4050 7700 3950 7700
+Connection ~ 3950 7700
 Wire Wire Line
-	4200 7700 4200 7600
+	3950 7700 3950 7600
 Wire Wire Line
-	4300 7900 4200 7900
-Connection ~ 4200 7900
+	4050 7900 3950 7900
+Connection ~ 3950 7900
 Wire Wire Line
-	4200 7900 4200 7700
-Text Label 4000 8300 0    50   ~ 0
+	3950 7900 3950 7700
+Text Label 3750 8300 0    50   ~ 0
 gnd
 Wire Wire Line
-	4000 8300 4300 8300
+	3750 8300 4050 8300
 $Comp
 L Switch:SW_SPDT SW1
 U 1 1 61C533B5
-P 3500 8200
-F 0 "SW1" H 3500 8370 50  0000 C CNN
-F 1 "SW_SPDT" H 3500 8000 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 3500 8200 50  0001 C CNN
-F 3 "~" H 3500 8200 50  0001 C CNN
-	1    3500 8200
+P 3250 8200
+F 0 "SW1" H 3250 8370 50  0000 C CNN
+F 1 "SW_SPDT" H 3250 8000 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 3250 8200 50  0001 C CNN
+F 3 "~" H 3250 8200 50  0001 C CNN
+	1    3250 8200
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	5300 7300 5600 7300
-Text Label 3000 8300 0    50   ~ 0
+	5050 7300 5350 7300
+Text Label 2750 8300 0    50   ~ 0
 gnd
 Wire Wire Line
-	3000 8300 3300 8300
-Text Label 3000 8100 0    50   ~ 0
+	2750 8300 3050 8300
+Text Label 2750 8100 0    50   ~ 0
 vcc
 Wire Wire Line
-	3300 8100 3000 8100
+	3050 8100 2750 8100
 Wire Wire Line
-	3700 8200 4300 8200
-Text Notes 2900 8000 0    50   ~ 0
+	3450 8200 4050 8200
+Text Notes 2650 8000 0    50   ~ 0
 Assume that address\nof palette registers  \nis 0xxxx
-Text Notes 2900 8700 0    50   ~ 0
+Text Notes 2650 8700 0    50   ~ 0
 Assume that address\nof palette registers  \nis 1xxxx
-NoConn ~ 5300 7600
-NoConn ~ 5300 7900
+NoConn ~ 5050 7600
+NoConn ~ 5050 7900
 Wire Wire Line
-	5600 7300 5600 8700
-Text Notes 6050 9750 0    50   ~ 0
+	5350 7300 5350 8700
+Text Notes 5800 9750 0    50   ~ 0
 Maybe, instead of two 74x245,\njust use two 74x257 ?\nBecause in my mod, the auxiliary\nshifter is only allowed to\nreceive data from the bus.\n
 Text Notes 1950 1200 2    50   ~ 0
 Main Shifter
@@ -1351,9 +1337,9 @@ green
 Text Label 6700 3400 0    50   ~ 0
 blue
 Wire Wire Line
-	5300 7000 6000 7000
+	5050 7000 5750 7000
 Wire Wire Line
-	6000 8700 5600 8700
+	5750 8700 5350 8700
 Text Notes 5300 3950 0    50   ~ 0
 «Additionally, jumpers are installed across \neach of three 3.6K ohm resistors on the motherboard.  \nThese resistors are easily traced from the Shifter \nsocket pins 21, 24, and 27.» \n(From the original text)\n
 Text Notes 14350 850  0    50   ~ 0
@@ -1408,88 +1394,39 @@ Wire Wire Line
 Text Notes 600  8000 0    50   ~ 0
 If the power from the shifter socket\nis not enough...
 $Comp
-L Connector_Generic:Conn_01x18 J3
-U 1 1 61C19D2C
-P 13000 8600
-F 0 "J3" H 13000 9500 50  0000 C CNN
-F 1 "Conn_01x18" H 13000 7600 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x18_P2.54mm_Vertical" H 13000 8600 50  0001 C CNN
-F 3 "~" H 13000 8600 50  0001 C CNN
-	1    13000 8600
-	-1   0    0    -1  
+L Device:R_Network08_US RN1
+U 1 1 61BF8D78
+P 7450 6400
+F 0 "RN1" V 6950 6400 50  0000 C CNN
+F 1 "10K×8 or 2K2×8" V 7850 6400 50  0000 C CNN
+F 2 "Resistor_THT:R_Array_SIP9" V 7925 6400 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 7450 6400 50  0001 C CNN
+	1    7450 6400
+	0    1    1    0   
 $EndComp
-Text Label 13500 8300 2    50   ~ 0
-r0
-Text Label 13500 8200 2    50   ~ 0
-r1
-Text Label 13500 8100 2    50   ~ 0
-r2
-Text Label 13500 8000 2    50   ~ 0
-r3
-Text Label 13500 7900 2    50   ~ 0
-r4
-Text Label 13500 7800 2    50   ~ 0
-r5
-Text Label 13500 8900 2    50   ~ 0
-g0
-Text Label 13500 8800 2    50   ~ 0
-g1
-Text Label 13500 8700 2    50   ~ 0
-g2
-Text Label 13500 8600 2    50   ~ 0
-g3
-Text Label 13500 8500 2    50   ~ 0
-g4
-Text Label 13500 8400 2    50   ~ 0
-g5
-Text Label 13500 9500 2    50   ~ 0
-r0
-Text Label 13500 9400 2    50   ~ 0
-r1
-Text Label 13500 9300 2    50   ~ 0
-r2
-Text Label 13500 9200 2    50   ~ 0
-r3
-Text Label 13500 9100 2    50   ~ 0
-r4
-Text Label 13500 9000 2    50   ~ 0
-r5
+Text Notes 7950 5400 2    50   ~ 0
+The pull-up MUST match the one of your\ndata bus. For stock machine, it's 10K.\n\nIf the recommandation of Exxos has been\napplied, then it should be 2K2, see\nhttps://www.exxoshost.co.uk/forum/viewtopic.php?f=17&t=2235#p27504
 Wire Wire Line
-	13200 7800 13500 7800
+	6750 6000 7250 6000
 Wire Wire Line
-	13200 7900 13500 7900
+	6750 6100 7250 6100
 Wire Wire Line
-	13200 8000 13500 8000
+	6750 6200 7250 6200
 Wire Wire Line
-	13200 8100 13500 8100
+	6750 6300 7250 6300
 Wire Wire Line
-	13200 8200 13500 8200
+	6750 6400 7250 6400
 Wire Wire Line
-	13200 8300 13500 8300
+	6750 6500 7250 6500
 Wire Wire Line
-	13200 8400 13500 8400
+	6750 6600 7250 6600
+NoConn ~ 7250 6700
+Text Label 7950 6000 2    50   ~ 0
+vcc
 Wire Wire Line
-	13200 8500 13500 8500
-Wire Wire Line
-	13200 8600 13500 8600
-Wire Wire Line
-	13200 8700 13500 8700
-Wire Wire Line
-	13200 8800 13500 8800
-Wire Wire Line
-	13200 8900 13500 8900
-Wire Wire Line
-	13200 9000 13500 9000
-Wire Wire Line
-	13200 9100 13500 9100
-Wire Wire Line
-	13200 9200 13500 9200
-Wire Wire Line
-	13200 9300 13500 9300
-Wire Wire Line
-	13200 9400 13500 9400
-Wire Wire Line
-	13200 9500 13500 9500
-Text Notes 12650 7600 0    50   ~ 0
-Use this to plug to digital\nconverter.
+	7650 6000 7950 6000
+Wire Notes Line
+	5150 5450 7950 5450
+Wire Notes Line
+	7450 5450 7450 5850
 $EndSCHEMATC
