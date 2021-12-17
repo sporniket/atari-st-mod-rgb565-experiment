@@ -405,23 +405,23 @@ NoConn ~ 13000 3700
 $Comp
 L 74xx:74HC00 U1
 U 1 1 61BD41CE
-P 9600 1700
-F 0 "U1" H 9600 1750 50  0000 C CNN
-F 1 "74HC00" H 9600 1650 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 9600 1700 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74hc00" H 9600 1700 50  0001 C CNN
-	1    9600 1700
-	1    0    0    -1  
-$EndComp
-$Comp
-L 74xx:74HC00 U1
-U 2 1 61BDB6F9
 P 9600 2150
 F 0 "U1" H 9600 2200 50  0000 C CNN
 F 1 "74HC00" H 9600 2100 50  0000 C CNN
 F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 9600 2150 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74hc00" H 9600 2150 50  0001 C CNN
-	2    9600 2150
+	1    9600 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74HC00 U1
+U 2 1 61BDB6F9
+P 9600 1700
+F 0 "U1" H 9600 1750 50  0000 C CNN
+F 1 "74HC00" H 9600 1650 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 9600 1700 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74hc00" H 9600 1700 50  0001 C CNN
+	2    9600 1700
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -457,14 +457,14 @@ F 3 "http://www.ti.com/lit/gpn/sn74hc00" H 11000 10000 50  0001 C CNN
 	5    11000 10000
 	1    0    0    -1  
 $EndComp
-Text Label 9000 1600 0    50   ~ 0
+Text Label 9000 2050 0    50   ~ 0
 cs
 Wire Wire Line
-	9000 1600 9150 1600
-Text Label 9000 2050 0    50   ~ 0
+	9000 2050 9150 2050
+Text Label 9000 1600 0    50   ~ 0
 rxw
 Wire Wire Line
-	9300 2050 9150 2050
+	9300 1600 9150 1600
 Wire Wire Line
 	10900 1800 11500 1800
 Text Label 2550 6900 0    50   ~ 0
@@ -724,19 +724,19 @@ vcc
 Wire Wire Line
 	11000 9500 11300 9500
 Wire Wire Line
-	9300 1800 9150 1800
-Wire Wire Line
-	9150 1800 9150 1600
-Connection ~ 9150 1600
-Wire Wire Line
-	9150 1600 9300 1600
-Wire Wire Line
 	9300 2250 9150 2250
 Wire Wire Line
 	9150 2250 9150 2050
 Connection ~ 9150 2050
 Wire Wire Line
-	9150 2050 9000 2050
+	9150 2050 9300 2050
+Wire Wire Line
+	9300 1800 9150 1800
+Wire Wire Line
+	9150 1800 9150 1600
+Connection ~ 9150 1600
+Wire Wire Line
+	9150 1600 9000 1600
 Wire Wire Line
 	9900 2150 10100 2150
 Wire Wire Line
