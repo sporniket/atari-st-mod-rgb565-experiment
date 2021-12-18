@@ -6,7 +6,7 @@ encoding utf-8
 Sheet 1 1
 Title "Experimental RGB-565 mod for the Atari ST"
 Date "2021-12-16"
-Rev "v1.0.0-exp2"
+Rev "v1.0.0-xprc1"
 Comp "Sporniket-Studio.com"
 Comment1 ""
 Comment2 ""
