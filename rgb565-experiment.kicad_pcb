@@ -11,9 +11,9 @@
 
   (page A4)
   (title_block
-    (title "Experimental RGB-565 mod for the Atari ST")
-    (date 2021-12-18)
-    (rev v1.0.0-xprc2)
+    (title "Experimental RGB-565 colorspace for the Atari ST")
+    (date 2021-12-24)
+    (rev v1.0.0-xprc3)
     (company Sporniket-Studio.com)
   )
 
@@ -2043,7 +2043,7 @@
   (gr_text "ISOLATE THIS SIDE EVERYWHERE\n\nEXCEPT THE PINS TO THE\n\nMAINBOARD SHIFTER SOCKET\n\n" (at 160.655 105.41 90) (layer B.SilkS)
     (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
   )
-  (gr_text "Original project : https://github.com/sporniket/atari-st-mod-rgb565-experiment v1.0.0-xprc2" (at 139.4206 132.0292) (layer F.SilkS)
+  (gr_text "Original project : https://github.com/sporniket/atari-st-mod-rgb565-experiment v1.0.0-xprc3" (at 139.4206 132.0292) (layer F.SilkS)
     (effects (font (size 1.016 1.016) (thickness 0.1524)))
   )
   (gr_text JLCJLCJLCJLC (at 198.8566 75.8698 90) (layer F.SilkS)
