@@ -5,8 +5,8 @@ $Descr A3 16535 11693
 encoding utf-8
 Sheet 1 1
 Title "Experimental RGB-565 mod for the Atari ST"
-Date "2021-12-16"
-Rev "v1.0.0-xprc1"
+Date "2022-04-30"
+Rev "v1.0.0-rc1"
 Comp "Sporniket-Studio.com"
 Comment1 ""
 Comment2 ""
@@ -427,12 +427,12 @@ $EndComp
 $Comp
 L 74xx:74HC00 U1
 U 3 1 61BDF303
-P 3150 7000
-F 0 "U1" H 3150 7050 50  0000 C CNN
-F 1 "74HC00" H 3150 6950 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 3150 7000 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74hc00" H 3150 7000 50  0001 C CNN
-	3    3150 7000
+P 3150 7300
+F 0 "U1" H 3150 7350 50  0000 C CNN
+F 1 "74HC00" H 3150 7250 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 3150 7300 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74hc00" H 3150 7300 50  0001 C CNN
+	3    3150 7300
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -467,16 +467,14 @@ Wire Wire Line
 	9300 1600 9150 1600
 Wire Wire Line
 	10900 1800 11500 1800
-Text Label 2550 6900 0    50   ~ 0
+Text Label 2550 7200 0    50   ~ 0
 a5
 Wire Wire Line
-	2850 6900 2700 6900
+	2850 7200 2700 7200
 Text Notes 8600 1450 0    50   ~ 0
 ~CS2~ = ~CS~ OR R/~W~\nThe second shifter is prevented to drive the bus \nduring Read cycles
-Text Label 3750 7100 0    50   ~ 0
+Text Label 3750 7000 0    50   ~ 0
 a5
-Wire Wire Line
-	4050 7100 3900 7100
 $Comp
 L 74xx:74HC245 U4
 U 1 1 61C4AF5F
@@ -716,7 +714,7 @@ vcc
 Wire Wire Line
 	6250 7400 6550 7400
 Text Notes 2650 9750 0    50   ~ 0
-The original mod state to use one 74x243 + one 74x245.\nI don't know how it is done\n\nI used two 74x245, and use a5 to select wich one to \nenable. I assume that address 0 to 15 are the palette\nregisters. It may be wrong.\n\nThe 74x257 allow to test whether the palette registers\nare in the range 0—15 or 16—31
+The original mod state to use one 74x243 + one 74x245.\nI don't know how it is done.\n\nI used two 74x245, and use a5 to select wich one to \nenable, because address 0 to 15 are the palette\nregisters.
 Wire Wire Line
 	10300 1900 10100 1900
 Text Label 11300 9500 2    50   ~ 0
@@ -763,28 +761,12 @@ vcc
 Wire Wire Line
 	4550 6700 4850 6700
 Wire Wire Line
-	2700 6900 2700 7100
+	2700 7200 2700 7400
 Wire Wire Line
-	2700 7100 2850 7100
-Connection ~ 2700 6900
+	2700 7400 2850 7400
+Connection ~ 2700 7200
 Wire Wire Line
-	2700 6900 2550 6900
-Wire Wire Line
-	3900 7100 3900 7300
-Wire Wire Line
-	3900 7300 4050 7300
-Connection ~ 3900 7100
-Wire Wire Line
-	3900 7100 3750 7100
-Wire Wire Line
-	4050 7000 3600 7000
-Wire Wire Line
-	3600 7000 3600 7400
-Wire Wire Line
-	3600 7400 4050 7400
-Connection ~ 3600 7000
-Wire Wire Line
-	3600 7000 3450 7000
+	2700 7200 2550 7200
 Text Label 3750 8000 0    50   ~ 0
 gnd
 Wire Wire Line
@@ -810,33 +792,18 @@ Text Label 3750 8300 0    50   ~ 0
 gnd
 Wire Wire Line
 	3750 8300 4050 8300
-$Comp
-L Switch:SW_SPDT SW1
-U 1 1 61C533B5
-P 3250 8200
-F 0 "SW1" H 3250 8370 50  0000 C CNN
-F 1 "SW_SPDT" H 3250 8000 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 3250 8200 50  0001 C CNN
-F 3 "~" H 3250 8200 50  0001 C CNN
-	1    3250 8200
-	-1   0    0    -1  
-$EndComp
 Wire Wire Line
 	5050 7300 5350 7300
-Text Label 2750 8300 0    50   ~ 0
+Text Label 3750 7400 0    50   ~ 0
 gnd
 Wire Wire Line
-	2750 8300 3050 8300
-Text Label 2750 8100 0    50   ~ 0
+	3750 7400 4050 7400
+Text Label 3750 7100 0    50   ~ 0
 vcc
 Wire Wire Line
-	3050 8100 2750 8100
-Wire Wire Line
-	3450 8200 4050 8200
-Text Notes 2650 8000 0    50   ~ 0
-Assume that address\nof palette registers  \nis 0xxxx
-Text Notes 2650 8700 0    50   ~ 0
-Assume that address\nof palette registers  \nis 1xxxx
+	4050 7100 3750 7100
+Text Notes 2400 8350 0    50   ~ 0
+When ~CS~ is asserted (low),\nthe bit manipulation according\nto A5 should be enabled.\nWhen ~CS~ is negated (high),\nthe bit manipulation is disabled.
 NoConn ~ 5050 7600
 NoConn ~ 5050 7900
 Wire Wire Line
@@ -1429,4 +1396,12 @@ Wire Notes Line
 	5150 5450 7950 5450
 Wire Notes Line
 	7450 5450 7450 5850
+Text Label 3750 8200 0    50   ~ 0
+cs
+Wire Wire Line
+	3750 8200 4050 8200
+Wire Wire Line
+	3450 7300 4050 7300
+Wire Wire Line
+	3750 7000 4050 7000
 $EndSCHEMATC
